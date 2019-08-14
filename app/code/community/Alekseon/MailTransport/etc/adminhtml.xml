@@ -8,6 +8,23 @@
  */
 -->
 <config>
+    <menu>
+        <system>
+            <children>
+                <alekseon_tools translate="title" module="alekseon_mailTransport">
+                    <title>Alekseon Tools</title>
+                    <sort_order>89</sort_order>
+                    <children>
+                        <sent_emails_history>
+                            <title>Sent Emails History</title>
+                            <sort_order>20</sort_order>
+                            <action>adminhtml/mailTransport_sentEmailsHistory</action>                  
+                        </sent_emails_history>
+                    </children>
+                </alekseon_tools>
+            </children>
+        </system>    
+    </menu>
    <acl>
         <resources>
             <admin>
@@ -26,6 +43,16 @@
                                     </alekseon_mailTransport>
                                 </children>
                             </config>
+                            <alekseon_tools translate="title" module="alekseon_mailTransport">
+                                <title>Alekseon Tools</title>
+                                <sort_order>89</sort_order>
+                                <children>
+                                    <sent_emails_history>
+                                        <title>Sent Emails History</title>
+                                        <sort_order>20</sort_order>
+                                    </sent_emails_history>
+                                </children>
+                            </alekseon_tools>
                         </children>
                     </system>
                 </children>

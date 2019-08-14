@@ -11,4 +11,9 @@ class Alekseon_MailTransport_Helper_Data extends Mage_Core_Helper_Abstract
     {   
         return 'http://www.alekseon.com';
     }
+    
+    public function isSentEmailHistoryEnabled()
+    {
+        return Mage::getStoreConfig('alekseon_mailTransport/sent_email_history/enabled');
+    }
 }

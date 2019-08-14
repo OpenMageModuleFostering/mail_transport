@@ -19,7 +19,11 @@ class Alekseon_MailTransport_Model_AlekseonAdminNotification_Feed extends Mage_A
             $this->_feedUrl = Mage::helper('alekseon_mailTransport')->getAlekseonUrl() . '/rss/magento_rss.xml';
             $query = '?utm_source=' . urlencode(Mage::getStoreConfig('web/unsecure/base_url'));
             $query .= '&utm_medium=' . urlencode('Magento Connect');
-            $query .= '&utm_content=' . urlencode(Mage::getEdition() . ' ' . Mage::getVersion());
+            if (method_exists('Mage', 'getEdition')) {
+                $query .= '&utm_content=' . urlencode(Mage::getEdition() . ' ' . Mage::getVersion());
+            } else {
+                $query .= '&utm_content=' . urlencode(Mage::getVersion());
+            }
             $query .= '&utm_term=' . urlencode(implode(',', $this->_getAlekseonInstalledModules()));
             
             $this->_feedUrl .= $query;
