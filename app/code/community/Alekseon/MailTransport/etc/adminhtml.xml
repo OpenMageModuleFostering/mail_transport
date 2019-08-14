@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author    Marcin Frymark
+ * @email     contact@alekseon.com
+ * @company   Alekseon
+ * @website   www.alekseon.com
+ */
+-->
+<config>
+   <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <alekseon_adminNotification translate="title" module="alekseon_mailTransport">
+                                        <title>Alekseon Notifications</title>
+                                        <sort_order>10</sort_order>
+                                    </alekseon_adminNotification>
+                                    <alekseon_mailTransport translate="title" module="alekseon_mailTransport">
+                                        <title>Mail Transport</title>
+                                        <sort_order>30</sort_order>
+                                    </alekseon_mailTransport>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>    
+</config>

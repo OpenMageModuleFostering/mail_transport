@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>mail_transport</name>
+    <version>0.1.0.5</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Send magento emails by protocol SMTP or save them to a files.</summary>
+    <description>Send magento emails by protocol SMTP or save them to a files.</description>
+    <notes>Send magento emails by protocol SMTP or save them to a files.</notes>
+    <authors><author><name>Marcin Frymark</name><user>Alekseon</user><email>contact@alekseon.com</email></author></authors>
+    <date>2014-04-04</date>
+    <time>09:22:18</time>
+    <contents><target name="magecommunity"><dir name="Alekseon"><dir name="MailTransport"><dir><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Form"><dir name="Field"><file name="AlekseonLogo.php" hash="f51973c6b6547da6d3c4662a7fbb6566"/><file name="AlekseonNotification.php" hash="51f024aaf7825e876064ed8c2736c0bb"/></dir></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="c759be918e9ac8e2dc7bf486c03306a9"/></dir><dir name="Model"><dir name="AlekseonAdminNotification"><file name="Feed.php" hash="aaf8c072689181202e0c561beabc54b3"/><file name="Observer.php" hash="f44011324cad1c5284d0ea68a6267020"/></dir><dir name="Email"><file name="Template.php" hash="dd9a314a4bd24049357600743612b7d2"/></dir><dir name="System"><dir name="Config"><dir name="Source"><file name="EncryptionProtocols.php" hash="71dfa161d404dc77be304c9946e7318e"/><file name="MailTransportTypes.php" hash="c60afbdae29ed7afbf016b6fef33f94c"/><file name="SmtpAuthModes.php" hash="6b30e126782cdc9bb93755c179c06fc4"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="631199f9228dca4d207a2892a9036e30"/><file name="config.xml" hash="27f6dc26c25633eab2ebe34f946858fc"/><file name="system.xml" hash="7c15bc570d20617be03cc59bf8c708fd"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Alekseon_MailTransport.xml" hash="e99dcf95b0657403cec683729a620450"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

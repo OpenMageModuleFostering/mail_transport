@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/mail_transport",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Send magento emails by protocol SMTP or save them to a files.",
+    "authors": [
+    {
+        "name": "Marcin Frymark",
+        "email": "contact@alekseon.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
