@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Send magento emails by protocol SMTP or save them to a files.

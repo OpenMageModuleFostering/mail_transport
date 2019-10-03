@@ -1,5 +1,5 @@
 {
-    "name": "OpenMageModuleFostering\/mail_transport",
+    "name": "openmage-module-fostering\/mail_transport",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
